@@ -188,7 +188,7 @@ private double berat;
 private int hari;
 ```
 
-Data tersebut tidak bisa diakses langsung dari luar class, tetapi diambil melalui method getter seperti `getNama()`, `getAlamat()`, dan lain-lain.
+Data tersebut hanya bisa diambil melalui method getter seperti `getNama()`, `getAlamat()`, dan lain-lain.
 
 ---
 
