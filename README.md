@@ -1,4 +1,6 @@
 # Sistem Laundry Sederhana Berbasis OOP (Java)
+**Nama:** Daffa Rifqi As Shidiq
+**NRP:** 5027251038
 
 ## Deskripsi Kasus
 
@@ -180,11 +182,9 @@ class CuciSetrika extends PesananLaundry {
 
 
 ## Input Pesanan
-![Input](img/input.png)
 <img width="1920" height="1140" alt="Screenshot 2026-03-25 150123" src="https://github.com/user-attachments/assets/fd596e00-5634-4eba-8708-e2cc154f2563" />
 
 ## Riwayat Laundry
-![Riwayat](img/riwayat.png)
 <img width="1920" height="1140" alt="Screenshot 2026-03-25 150137" src="https://github.com/user-attachments/assets/1ddad07d-bf2a-429f-9058-bd37180a695b" />
 
 ---
@@ -204,8 +204,6 @@ private int hari;
 
 Data tersebut tidak bisa diakses langsung dari luar class, tetapi diambil melalui method getter seperti `getNama()`, `getAlamat()`, dan lain-lain.
 
-Tujuannya agar data lebih aman dan lebih terkontrol.
-
 ---
 
 ### 2. Abstraction
@@ -215,15 +213,13 @@ Konsep abstraction diterapkan dengan menggunakan **abstract class** bernama `Pes
 abstract class PesananLaundry
 ```
 
-Class ini berfungsi sebagai gambaran umum dari semua jenis pesanan laundry.
-
 Di dalamnya terdapat method abstrak:
 
 ```java
 abstract double harga();
 ```
 
-Method ini nantinya diisi secara berbeda oleh class turunan karena tiap layanan memiliki aturan harga yang berbeda.
+Method ini nantinya diisi secara berbeda oleh class turunan karena tiap layanan memiliki harga yang berbeda-beda.
 
 ---
 
@@ -239,8 +235,6 @@ Kedua class tersebut mewarisi atribut dan method dari class `PesananLaundry`.
 class CuciLipat extends PesananLaundry
 class CuciSetrika extends PesananLaundry
 ```
-
-Dengan inheritance, saya tidak perlu menulis ulang data dan fungsi dasar yang sebenarnya sama pada setiap jenis layanan.
 
 ---
 
@@ -269,81 +263,6 @@ harga yang dihitung akan berbeda tergantung apakah objek tersebut `CuciLipat` at
 
 ---
 
-## Keunikan Program
+## Keunikan
 
-Menurut saya, yang membedakan program ini dari program individu lain adalah:
-
-### 1. Studi kasusnya dekat dengan kehidupan sehari-hari
-Saya memilih tema laundry karena merupakan permasalahan yang sederhana, realistis, dan mudah dibayangkan penerapannya dalam kehidupan nyata.
-
-Jadi program ini tidak hanya sekadar latihan coding, tetapi juga bisa menggambarkan sistem usaha kecil secara sederhana.
-
----
-
-### 2. Sudah ada logika bisnis sederhana
-Program ini tidak hanya mencatat data pelanggan, tetapi juga memiliki logika perhitungan harga berdasarkan:
-
-- jenis layanan,
-- waktu pengerjaan,
-- berat pakaian,
-- dan diskon otomatis.
-
-Artinya, program ini sudah lebih dari sekadar input-output biasa.
-
----
-
-### 3. Struktur class dibuat cukup rapi
-Saya mencoba membedakan antara class induk dan class turunan agar struktur program lebih jelas dan mudah dikembangkan lagi.
-
-Misalnya, jika ke depannya ingin ditambah fitur seperti:
-
-- laundry express,
-- dry cleaning,
-- cuci sepatu,
-
-maka program ini masih cukup mudah untuk dikembangkan.
-
----
-
-### 4. Tampilan terminal dibuat lebih menarik
-Program ini juga saya buat dengan tampilan terminal yang lebih menarik menggunakan judul ASCII sederhana agar tidak terlalu polos saat dijalankan.
-
-Hal ini memang sederhana, tetapi bisa memberi kesan bahwa program dibuat dengan lebih niat dan lebih enak dilihat.
-
----
-
-## Cara Menjalankan Program
-
-1. Pastikan Java sudah terinstall di laptop/PC.
-2. Simpan kode dengan nama `App.java`
-3. Compile program dengan perintah:
-
-```bash
-javac App.java
-```
-
-4. Jalankan program:
-
-```bash
-java App
-```
-
----
-
-## Kesimpulan
-
-Program ini dibuat sebagai implementasi sederhana dari konsep **Object-Oriented Programming (OOP)** menggunakan studi kasus laundry.
-
-Melalui program ini, saya belajar bagaimana membuat class, inheritance, abstract class, serta bagaimana menerapkan polymorphism dan encapsulation dalam program Java.
-
-Walaupun masih sederhana, program ini sudah cukup untuk menggambarkan bagaimana OOP bisa digunakan untuk menyelesaikan permasalahan yang dekat dengan kehidupan sehari-hari.
-
-Ke depannya, program ini masih bisa dikembangkan lagi agar menjadi sistem laundry yang lebih lengkap dan lebih interaktif.
-
----
-
-## Identitas
-
-**Nama:** [Isi Nama Kamu]  
-**NRP / Kelas:** [Isi NRP dan Kelas]  
-**Mata Kuliah:** Pemrograman Berorientasi Objek
+Menurut saya, Keunikan yang terdapat dalam program ini mungkin dibagian diskonnya karena jika laundry diatas 5 kg akan dapat diskon 10%/kg nya. Case ini juga lumayan unik karena berfokus pada solusi baju anti tertukar.
