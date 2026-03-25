@@ -21,6 +21,7 @@ Beberapa fitur yang ada pada program ini antara lain:
 ---
 
 ## Class Diagram
+<img width="7366" height="3180" alt="mermaid-ai-diagram" src="https://github.com/user-attachments/assets/f39c8836-1b9f-470b-9c4c-d5d40afc8fed" />
 
 
 ---
