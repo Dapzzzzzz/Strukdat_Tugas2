@@ -176,13 +176,16 @@ class CuciSetrika extends PesananLaundry {
 
 
 ## Tampilan Menu
-![Menu](img/menu.png)
+<img width="1920" height="1140" alt="Screenshot 2026-03-25 150030" src="https://github.com/user-attachments/assets/f20c4914-fee9-496f-94c0-0ccf22372c30" />
+
 
 ## Input Pesanan
 ![Input](img/input.png)
+<img width="1920" height="1140" alt="Screenshot 2026-03-25 150123" src="https://github.com/user-attachments/assets/fd596e00-5634-4eba-8708-e2cc154f2563" />
 
 ## Riwayat Laundry
 ![Riwayat](img/riwayat.png)
+<img width="1920" height="1140" alt="Screenshot 2026-03-25 150137" src="https://github.com/user-attachments/assets/1ddad07d-bf2a-429f-9058-bd37180a695b" />
 
 ---
 
