@@ -3,29 +3,7 @@
 ## Deskripsi Kasus
 
 Pada tugas ini, saya membuat program sederhana bertema **sistem laundry** menggunakan bahasa pemrograman **Java** dengan menerapkan konsep **Object-Oriented Programming (OOP)**.
-
-Ide dari program ini diambil dari permasalahan yang cukup dekat dengan kehidupan sehari-hari, yaitu bagaimana sebuah usaha laundry mencatat data pelanggan dan menghitung biaya laundry secara lebih terstruktur.
-
-Dalam program ini, pengguna dapat:
-
-- menambahkan data pesanan laundry,
-- memilih jenis layanan laundry,
-- menyimpan data pesanan,
-- dan melihat riwayat laundry yang sudah masuk.
-
-Layanan yang tersedia pada program ini ada dua, yaitu:
-
-- **Cuci Lipat**
-- **Cuci Setrika**
-
-Selain itu, program juga dapat menghitung total biaya laundry berdasarkan:
-
-- jenis layanan,
-- lama pengerjaan,
-- berat pakaian,
-- dan diskon jika berat laundry melebihi 5 kg.
-
-Program ini dibuat agar proses pencatatan laundry yang awalnya dilakukan secara manual bisa dibuat lebih rapi dan otomatis.
+Saya memilih case ini karena melihat sg teman saya "Sakti" yang kesal karena bajunya selalu tertukar saat laundry, ga cuma satu kali tetapi sudah belasan kali.Maka dari itu saya membuat program sistem laundry untuk mengurangi resiko baju tertukar
 
 ---
 
@@ -44,44 +22,6 @@ Beberapa fitur yang ada pada program ini antara lain:
 
 ## Class Diagram
 
-```mermaid
-classDiagram
-    class PesananLaundry {
-        -String id
-        -String nama
-        -String alamat
-        -String keterangan
-        -double berat
-        -int hari
-        +PesananLaundry(String id, String nama, String alamat, String keterangan, double berat, int hari)
-        +getID() String
-        +getNama() String
-        +getAlamat() String
-        +getKeterangan() String
-        +getBerat() double
-        +getHari() int
-        +harga() double
-        +totalBayar() double
-    }
-
-    class CuciLipat {
-        +CuciLipat(String id, String nama, String alamat, String keterangan, double berat, int hari)
-        +harga() double
-    }
-
-    class CuciSetrika {
-        +CuciSetrika(String id, String nama, String alamat, String keterangan, double berat, int hari)
-        +harga() double
-    }
-
-    class App {
-        +main(String[] args) void
-    }
-
-    PesananLaundry <|-- CuciLipat
-    PesananLaundry <|-- CuciSetrika
-    App --> PesananLaundry
-```
 
 ---
 
@@ -233,22 +173,6 @@ class CuciSetrika extends PesananLaundry {
 
 ## Screenshot Output
 
-Bagian ini bisa diisi dengan screenshot hasil program saat dijalankan.
-
-Contoh:
-
-```md
-## Tampilan Menu
-![Menu](img/menu.png)
-
-## Input Pesanan
-![Input](img/input.png)
-
-## Riwayat Laundry
-![Riwayat](img/riwayat.png)
-```
-
-Kalau folder gambarnya sudah dibuat, hasilnya nanti akan muncul seperti ini:
 
 ## Tampilan Menu
 ![Menu](img/menu.png)
