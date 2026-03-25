@@ -10,29 +10,14 @@ Saya memilih case ini karena melihat sg teman saya "Sakti" yang kesal karena baj
 
 ---
 
-## Fitur Program
-
-Beberapa fitur yang ada pada program ini antara lain:
-
-- Menambahkan pesanan laundry baru
-- Menyimpan data pelanggan dan pesanan
-- Menampilkan daftar / riwayat laundry
-- Menghitung total biaya secara otomatis
-- Mendukung dua jenis layanan laundry
-- Memberikan diskon otomatis untuk berat tertentu
-
----
-
 ## Class Diagram
+ini adalah class diagram yang dibuat menggunakan mermaid.ai
 <img width="7366" height="3180" alt="mermaid-ai-diagram" src="https://github.com/user-attachments/assets/f39c8836-1b9f-470b-9c4c-d5d40afc8fed" />
 
 
 ---
 
 ## Kode Program Java
-
-### File: `App.java`
-
 ```java
 import java.util.Scanner;
 
